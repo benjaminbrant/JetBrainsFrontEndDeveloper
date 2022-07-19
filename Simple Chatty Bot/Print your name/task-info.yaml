@@ -1,0 +1,25 @@
+type: remote_edu
+files:
+- name: main.js
+  visible: true
+  text: |
+    const input = require('sync-input');
+
+    console.log("Hello! My name is Aid.");
+    console.log("I was created in 2020.");
+    console.log("Please, remind me your name.");
+
+    // use input() + to get the user's output
+
+    console.log("What a great name you have, {your_name}!");
+  learner_created: false
+- name: tests.py
+  visible: false
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/17055#comment
+check_profile: hyperskill_node_javascript
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Sat, 16 Jul 2022 11:26:19 UTC
+record: 2
