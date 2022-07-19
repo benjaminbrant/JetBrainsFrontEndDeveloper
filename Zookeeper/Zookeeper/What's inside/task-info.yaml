@@ -1,0 +1,75 @@
+type: remote_edu
+custom_name: What's inside?
+files:
+- name: tests.py
+  visible: false
+  learner_created: false
+- name: main.js
+  visible: true
+  text: "input = require('sync-input');\n\ncamel =`\nSwitching on the camera in the\
+    \ camel habitat...\n ___.-''''-.\n/___  @    |\n',,,,.     |         _.'''''''._\n\
+    \     '     |        /           \\\\\n     |     \\\\    _.-'             \\\\\
+    \n     |      '.-'                  '-.\n     |                              \
+    \ ',\n     |                                '',\n      ',,-,                 \
+    \          ':;\n           ',,| ;,,                 ,' ;;\n              ! ; !'',,,',',,,,'!\
+    \  ;   ;:\n             : ;  ! !       ! ! ;  ;   :;\n             ; ;   ! ! \
+    \     ! !  ; ;   ;,\n            ; ;    ! !     ! !   ; ;     \n            ;\
+    \ ;    ! !    ! !     ; ;\n           ;,,      !,!   !,!     ;,;\n           /_I\
+    \      L_I   L_I     /_I\nLook at that! Our little camel is sunbathing!`;\n\n\
+    lion = `\nSwitching on the camera in the lion habitat...\n                   \
+    \                            ,w.\n                                           \
+    \  ,YWMMw  ,M  ,\n                        _.---.._   __..---._.'MMMMMw,wMWmW,\n\
+    \                   _.-\"\"        '''           YP\"WMMMMMMMMMb,\n          \
+    \      .-' __.'                   .'     MMMMW^WMMMM;\n    _,        .'.-'\";\
+    \ \\`,       /\\`     .--\"\"      :MMM[==MWMW^;\n ,mM^\"     ,-'.'   /   ;  \
+    \    ;      /   ,       MMMMb_wMW\"  @\\\\\n,MM:.    .'.-'   .'     ;     \\`\\\
+    \\    ;     \\`,     MMMMMMMW \\`\"=./\\`-,\nWMMm__,-'.'     /      _.\\\\   \
+    \   F'''-+,,   ;_,_.dMMMMMMMM[,_ / \\`=_}\n\"^MP__.-'    ,-' _.--\"\"   \\`-,\
+    \   ;       \\\\  ; ;MMMMMMMMMMW^\\`\\`; __|\n           /   .'            ; ;\
+    \         )  )\\`{  \\\\ \\`\"^W^\\`,   \\\\  :\n          /  .'             /\
+    \  (       .'  /     Ww._     \\`.  \\`\"\n         /  Y,              \\`,  \\\
+    `-,=,_{   ;      MMMP\\`\"\"-,  \\`-._.-,\n        (--, )                \\`,_\
+    \ / \\`) \\\\/\"\")      ^\"      \\`-, -;\"\\\\:\nThe lion is roaring!`;\n\n\
+    deer = `\nSwitching on the camera in the deer habitat...\n   /|       |\\\\\n\\\
+    `__\\\\\\\\       //__'\n   ||      ||\n \\\\__\\`\\\\     |'__/\n   \\`_\\\\\\\
+    \\   //_'\n   _.,:---;,._\n   \\\\_:     :_/\n     |@. .@|\n     |     |\n   \
+    \  ,\\\\.-./ \\\\\n     ;;\\`-'   \\`---__________-----.-.\n     ;;;         \
+    \                \\\\_\\\\\n     ';;;                         |\n      ;    |\
+    \                      ;\n       \\\\   \\\\     \\\\        |      /\n      \
+    \  \\\\_, \\\\    /        \\\\     |\\\\\n          |';|  |,,,,,,,,/ \\\\   \
+    \ \\\\ \\\\_\n          |  |  |           \\\\   /   |\n          \\\\  \\\\ \
+    \ |           |  / \\\\  |\n           | || |           | |   | |\n          \
+    \ | || |           | |   | |\n           | || |           | |   | |\n        \
+    \   |_||_|           |_|   |_|\n          /_//_/           /_/   /_/\nOur 'Bambi'\
+    \ looks hungry. Let's go to feed it!`;\n\ngoose = `\nSwitching on the camera in\
+    \ the goose habitat...\n\n                                    _\n            \
+    \                    ,-\"\" \"\".\n                              ,'  ____  \\\
+    `.\n                            ,'  ,'    \\`.  \\`._\n   (\\`.         _..--.._\
+    \   ,'  ,'        \\\\    \\\\\n  (\\`-.\\\\    .-\"\"        \"\"'   /      \
+    \    (  d _b\n (\\`._  \\`-\"\" ,._             (            \\`-(   \\\\\n <_\
+    \  \\`     (  <\\`<            \\\\              \\`-._\\\\\n  <\\`-       (__<\
+    \ <           :\n   (__        (_<_<          ;\n    \\`------------------------------------------\n\
+    The goose is staring intently at you... Maybe it's time to change the channel?`;\n\
+    \nbat = `\nSwitching on the camera in the bat habitat...\n_________________  \
+    \             _________________\n ~-.              \\\\  |\\\\___/|  /       \
+    \       .-~\n     ~-.           \\\\ / o o \\\\ /           .-~\n        >   \
+    \        \\\\\\\\  W  //           <\n       /             /~---~\\\\        \
+    \     \\\\\n      /_            |       |            _\\\\\n         ~-.     \
+    \   |       |        .-~\n            ;        \\\\     /        i\n         \
+    \  /___      /\\\\   /\\\\      ___\\\\\n                ~-. /  \\\\_/  \\\\ .-~\n\
+    \                   V         V\nThis bat looks like it’s doing fine.`;\n\nrabbit\
+    \ = `\nSwitching on the camera in the rabbit habitat...\n         ,\n        /|\
+    \      __\n       / |   ,-~ /\n      Y :|  //  /\n      | jj /( .^\n      >-\"\
+    ~\"-v\"\n     /       Y\n    jo  o    |\n   ( ~T~     j\n    >._-' _./\n   / \
+    \  \"~\"  |\n  Y     _,  |\n /| ;-\"~ _  l\n/ l/ ,-\"~    \\\\\n\\\\//\\\\/  \
+    \    .- \\\\\n Y        /    Y\n l       I     !\n ]\\\\      _\\\\    /\"\\\\\
+    \n(\" ~----( ~   Y.  )\nIt looks like we will soon have more rabbits!`;\n\nanswer\
+    \ = input(\"Please enter the number of the habitat you would like to view:\");\n"
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/225/stages/1130/implement#comment
+check_profile: hyperskill_node_javascript
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 18 Jul 2022 15:35:41 UTC
+record: 3

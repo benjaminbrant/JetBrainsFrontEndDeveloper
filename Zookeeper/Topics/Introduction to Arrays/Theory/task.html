@@ -1,0 +1,101 @@
+<h2>Introduction to Arrays</h2>
+<html>
+ <head></head>
+ <body>
+  <p>You have already learned about Javascript <strong>variables</strong> and how to store values like strings and numbers in them. What if you need to write a program that stores lots of values, though? The marks that were received by 60 students, for example. You could create 60 variables, each containing a single mark. But let's say each student is studying five subjects — now you would need 300 variables to store all the different marks!</p> 
+  <p>As you can imagine, creating all these variables would be a very frustrating and time-consuming experience. Also, debugging any problems would require a lot of effort.</p> 
+  <p>In this topic, you will learn about the <strong>Array </strong>data structure, which can be used to solve this issue.</p> 
+  <h5 id="what-are-arrays">What are Arrays?</h5> 
+  <p>Arrays are used to store multiple elements in a single variable. They are a special type of object in JavaScript. (The <code class="language-javascript">typeof</code> operator in JavaScript returns "object" for Arrays.)</p> 
+  <p>To resolve the issue described in the introduction, we can create an Array of marks for each student so they can be stored in a single variable.</p> 
+  <p></p>
+  <div class="alert alert-primary">
+   There's actually an even better way to organize the students' marks. You can use a more efficient data structure called a 
+   <strong>Map</strong>, which you will learn about in a future topic.
+  </div>
+  <p></p> 
+  <p>Next, let's see how to declare Arrays.</p> 
+  <h5 id="declaration-of-arrays">Declaration of Arrays</h5> 
+  <p>In JavaScript, there are two ways to declare an Array:</p> 
+  <pre><code class="language-javascript">let marks = new Array(); // Method 1
+
+let marks = []; // Method 2</code></pre> 
+  <p>Method 2 is usually preferred over Method 1.</p> 
+  <p>Now let's look at how the process of initializing Arrays differs when using these two methods.</p> 
+  <h5 id="initialization-of-arrays">Initialization of Arrays</h5> 
+  <p>If the Array is declared using Method 2, it can be initialized in the following way:</p> 
+  <pre><code class="language-javascript">// Method 2
+
+// Declaring and initializing the Array at the same time.
+
+let marksOne = [45, 50, 44, 30, 29] // Only integers
+
+let marksTwo = ["forty-five", "fifty", 44, 30, "twenty-nine"] // Strings and integers</code></pre> 
+  <p>Note that a single Array can contain elements of different data types.</p> 
+  <p>Next, let's see how to initialize Arrays using Method 1:</p> 
+  <pre><code class="language-javascript">// Method 1
+
+// Declaring and initializing the Array at the same time.
+
+let marksOne = new Array(45, 50, 44, 30, 29); // Creates an Array of marks with five elements
+
+let marksTwo = new Array(5); // Creates an Array of five undefined elements 
+
+let marksThree = new Array("45"); // Creates an Array containing one string element, which is "45"</code></pre> 
+  <p>As you can see, <code class="language-javascript">marksOne</code> is an Array of five integers, and <code class="language-javascript">marksTwo</code> is an Array of five <code class="language-javascript">undefined</code> elements. This syntax can be confusing, so it's best not to use Method 1 when working with numbers. Fortunately, as shown, the same problem doesn't apply to strings — <code class="language-javascript">marksThree</code> is an Array containing the string <code class="language-javascript">"45"</code>.</p> 
+  <p>If you declare an Array of <code class="language-javascript">undefined</code> elements like this:</p> 
+  <pre><code class="language-javascript">let marks = new Array(5);</code></pre> 
+  <p>You can initialize them one by one:</p> 
+  <pre><code class="language-javascript">marks[0] = "forty-five";
+marks[1] = "fifty";
+marks[2] = 44;
+marks[3] = 30;
+marks[4] = "twenty-nine";</code></pre> 
+  <h5 id="index-positions">Index positions</h5> 
+  <p>You might be wondering about the numbers in brackets used after the variable name in the above example: <code class="language-javascript">marks[0]</code>, <code class="language-javascript">marks[1]</code>, etc. This is the syntax for accessing or assigning values to the individual elements in an Array using <strong>index positions</strong>.</p> 
+  <p>Array indexes start from 0, so we can use the index numbers shown in the example to access the first five elements of an Array.</p> 
+  <p>Attempting to access an element with an index beyond the bounds of an Array will return <code class="language-javascript">undefined</code>. And the same will happen if you try to access an element within an Array's bounds that hasn't been initialized.</p> 
+  <p>Let's look at an example to help illustrate this point:</p> 
+  <pre><code class="language-javascript">let marks = [45, 50, 44, 30, 29];
+marks[10] = 65;
+console.log(marks);</code></pre> 
+  <p>The output of the above code is:</p> 
+  <p><img alt="" height="35" name="Screenshot 2021-08-26 120943.png" src="https://ucarecdn.com/b99962ee-6ce2-4eac-8492-b824cba6c19b/" width="637"></p> 
+  <p>We get this output because the number 65 was assigned to index position 10, which is greater than the initial size of the Array. So, Array indexes 5, 6, 7, 8, and 9 remain <strong>empty</strong> as they haven't been initialized, and will return <code class="language-javascript">undefined</code> if you attempt to access them.</p> 
+  <p></p>
+  <div class="alert alert-primary">
+   Don't forget that 
+   <code class="language-javascript">[0]</code> is the first element and 
+   <code class="language-javascript">[1]</code> is the second element in an Array.
+  </div>
+  <p></p> 
+  <h5 id="length-of-an-array">Length of an Array</h5> 
+  <p>An Array's <code class="language-javascript">length</code> property returns the number of elements that it contains, as shown in the below example:</p> 
+  <pre><code class="language-javascript">const languages = ["C", "C++", "Python", "Java", "JavaScript"];
+
+let len = languages.length; // 5</code></pre> 
+  <p></p>
+  <div class="alert alert-primary">
+   Keep in mind that the length of an Array is always one more than its highest index number. So, if an Array's length is 5, its highest index number will be 4.
+  </div>
+  <p></p> 
+  <p>Let's look at another example:</p> 
+  <pre><code class="language-javascript">const colors = ['orange', 'blue', 'red', 'pink', 'magenta'];</code></pre> 
+  <p>This Array has five elements. You already know that you can access the first one using <code class="language-javascript">colors[0]</code>, the second with <code class="language-javascript">colors[1]</code>, and so on. But what if you want to get the last element of the Array and you don't know its length? You can use the length property in this situation, as you can see below:</p> 
+  <pre><code class="language-javascript">const lastItem = colors[colors.length - 1]; // "magenta"</code></pre> 
+  <h5 id="isarray">isArray()</h5> 
+  <p>The <code class="language-javascript">isArray()</code> method returns<strong> </strong><code class="language-javascript">true</code> if an object is an Array, otherwise <code class="language-javascript">false</code>.</p> 
+  <p>The full syntax is <code class="language-javascript">Array.isArray(obj)</code> .</p> 
+  <p>The below examples show how to use this method:</p> 
+  <pre><code class="language-javascript">let marks = [45, 50, 44, 30, 29];
+
+Array.isArray(marks); // true
+
+let marksOne = "45";
+
+Array.isArray(marksOne); // false</code></pre> 
+  <h5 id="conclusion">Conclusion</h5> 
+  <p>You now know what Arrays are and have learned about the best practices for declaring and initializing them. You've also seen how to return the number of elements in an Array using its length property. Remember that you can check whether an object is an Array with the <code class="language-javascript">isArray()</code> method.</p> 
+  <p>Arrays are the most widely used data structure and have other important methods and properties that you will learn about in a later topic.</p>
+ </body>
+</html>

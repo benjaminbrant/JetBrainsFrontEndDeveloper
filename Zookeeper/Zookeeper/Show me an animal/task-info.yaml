@@ -1,0 +1,26 @@
+type: remote_edu
+custom_name: Show me an animal!
+files:
+- name: tests.py
+  visible: false
+  learner_created: false
+- name: main.js
+  visible: true
+  text: "animal = `\nSwitching on the camera in the camel habitat...\n ___.-''''-.\n\
+    /___  @    |\n',,,,.     |         _.'''''''._\n     '     |        /        \
+    \   \\\\\n     |     \\\\    _.-'             \\\\\n     |      '.-'         \
+    \         '-.\n     |                               ',\n     |               \
+    \                 '',\n      ',,-,                           ':;\n           ',,|\
+    \ ;,,                 ,' ;;\n              ! ; !'',,,',',,,,'!  ;   ;:\n     \
+    \        : ;  ! !       ! ! ;  ;   :;\n             ; ;   ! !      ! !  ; ;  \
+    \ ;,\n            ; ;    ! !     ! !   ; ;     \n            ; ;    ! !    ! !\
+    \     ; ;\n           ;,,      !,!   !,!     ;,;\n           /_I      L_I   L_I\
+    \     /_I\nLook at that! Our little camel is sunbathing!`\n"
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/225/stages/1129/implement#comment
+check_profile: hyperskill_node_javascript
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 18 Jul 2022 12:57:57 UTC
+record: 2
